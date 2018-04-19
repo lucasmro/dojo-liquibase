@@ -1,0 +1,23 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: add_column_to_users_table-city
+      author: lucasmro
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: city
+                  type: varchar(50)
+
+  - changeSet:
+      id: add_column_to_users_table-usermame
+      author: lucasmro
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: usermame
+                  type: varchar(8)
