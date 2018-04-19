@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: dojo_liquibase_mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: dojo_liquibase
+      MYSQL_ROOT_PASSWORD: 123456
