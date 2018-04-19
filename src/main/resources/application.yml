@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://localhost/dojo_liquibase?useSSL=false
     username: root
     password: 123456
+
+liquibase:
+  enabled: false
+  change-log: classpath:/database/db.changelog-master.yml
