@@ -1,0 +1,50 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create_table-users
+      author: lucasmro
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: firstname
+                  type: varchar(50)
+              - column:
+                  name: lastname
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: state
+                  type: char(2)
+
+  - changeSet:
+      id: create_table-cars
+      author: lucasmro
+      changes:
+        - createTable:
+            tableName: cars
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: make
+                  type: varchar(50)
+              - column:
+                  name: model
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
