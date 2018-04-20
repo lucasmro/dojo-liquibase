@@ -19,5 +19,5 @@ databaseChangeLog:
             tableName: users
             columns:
               - column:
-                  name: usermame
+                  name: username
                   type: varchar(8)
