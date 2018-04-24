@@ -76,6 +76,7 @@
                 <version>${liquibase.version}</version>
                 <configuration>
                     <changeLogFile>src/main/resources/database/db.changelog-master.yml</changeLogFile>
+                    <outputChangeLogFile>target/liquibase/db.changelog.yml</outputChangeLogFile>
                     <propertyFile>src/main/resources/liquibase.properties</propertyFile>
                 </configuration>
             </plugin>
