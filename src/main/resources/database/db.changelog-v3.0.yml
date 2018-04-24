@@ -1,0 +1,9 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: drop_table-cars
+      author: lucasmro
+      changes:
+        - dropTable:
+            cascadeConstraints: true
+            tableName: cars

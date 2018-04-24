@@ -3,3 +3,5 @@ databaseChangeLog:
       file: /src/main/resources/database/db.changelog-v1.0.yml
   - include:
       file: /src/main/resources/database/db.changelog-v2.0.yml
+  - include:
+      file: /src/main/resources/database/db.changelog-v3.0.yml
